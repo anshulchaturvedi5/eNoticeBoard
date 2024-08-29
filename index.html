@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'nonce-abc123';"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperverge Notice Board</title>
+    <link href="grid_stack/grid_stack.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar" id="sidebar">
+        <br />
+        <br />
+        <h1 style="text-align: center;">My Widgets</h1>
+        <div class="buttons">
+          <button id="addSlideButton" style="font-size: 18px;">
+            Google Slides
+          </button>
+          <button id="addTimerButton" style="font-size: 18px;">
+            Pomodoro Timer
+          </button>
+          <button id="addSheetButton" style="font-size: 18px;">
+            Google Spreadsheet
+          </button>
+          <button id="addFormButton" style="font-size: 18px;">
+            Google Form
+          </button>
+          <button id="addMeetButton" style="font-size: 18px;">
+            Google Calendar
+          </button>
+          <button id="IssueTracker" style="font-size: 18px;">
+            Issue Tracker
+          </button>
+          <button id="addSpotifyButton" style="font-size: 18px;">
+            Music Player
+          </button>
+          <button id="addNotionButton" style="font-size: 18px;">
+            Notion Page
+          </button>
+          <button id="addChat" style="font-size: 18px;">ChatBot</button>
+          <button id="addQuote" style="font-size: 18px;">Quotes</button>
+        </div>
+      </div>
+      <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+      <div class="main-content" id="mainContent">
+        <header class="header">
+          <img src="assets/hyperverge.webp" alt="Hyperverge" />
+          <form
+            action="https://www.google.com/search"
+            method="GET"
+            class="search-bar"
+          >
+            <input
+              type="text"
+              name="q"
+              placeholder="Google Search..."
+              id="searchQuery"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </header>
+        <div class="grid-stack"></div>
+      </div>
+    </div>
+    <script src="grid_stack/grid_stack.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+:root {
+    --canary-yellow: #c8b71d;
+    --dark-gray: #333333;
+    --light-gray: #F5F5F5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-gray);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: var(--dark-gray);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--canary-yellow);
+    margin: 8px auto 0;
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    line-height: 1.5;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--canary-yellow);
+    position: absolute;
+    left: -15px;
+    top: -15px;
+}
+
+.quote-author {
+    font-weight: bold;
+    text-align: right;
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .quote {
+        font-size: 1rem;
+    }
+    
+    .quote-author {
+        font-size: 0.9rem;
+    }
+}

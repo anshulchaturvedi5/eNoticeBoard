@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Hyperverge Notice Board",
+  "description": "Sets the homepage as a digital notice board.",
+  "version": "1.0",
+  "permissions": ["storage", "tabs"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/icons/hyperverge.png",
+      "48": "assets/icons/hyperverge.png",
+      "128": "assets/icons/hyperverge.png"
+    }
+  },
+  "icons" :{
+    "16": "assets/icons/hyperverge.png",
+    "48": "assets/icons/hyperverge.png",
+    "128": "assets/icons/hyperverge.png"
+  }
+}

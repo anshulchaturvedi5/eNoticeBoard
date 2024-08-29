@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Board</title>
+    <link rel="stylesheet" href="opportunity_board.css">
+</head>
+<body>
+    <header>
+        <h1>Opportunity Board</h1>
+    </header>
+    <main>
+        <section id="opportunity-list">
+            <h2>Top Opportunities</h2>
+            <div id="opportunities-container"></div>
+        </section>
+        <section id="opportunity-form">
+            <h2>Add New Opportunity</h2>
+            <form id="new-opportunity-form">
+                <input type="text" id="opportunity-title" placeholder="Title" required>
+                <textarea id="opportunity-description" placeholder="Description" required></textarea>
+                <button type="submit">Add Opportunity</button>
+            </form>
+        </section>
+    </main>
+    <script src="opportunity_board.js"></script>
+</body>
+</html>
